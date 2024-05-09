@@ -1,24 +1,41 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
+<<<<<<< HEAD
     m_FilePath: D:/Univa/7mo/Moviles/2do Parcial/Git_Game/Game/Game3D/Packages/manifest.json
+=======
+    m_FilePath: C:/Users/Mateo Arboleda/OneDrive/Documentos/5- semestre/juegos moviles/2x/Game/Game3D/Packages/manifest.json
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 638506358112034082
     m_Hash: 1719789460
   m_LockFileStatus:
     m_FilePath: D:/Univa/7mo/Moviles/2do Parcial/Git_Game/Game/Game3D/Packages/packages-lock.json
+=======
+      ticks: 638506275143356669
+    m_Hash: 3842001391
+  m_LockFileStatus:
+    m_FilePath: C:/Users/Mateo Arboleda/OneDrive/Documentos/5- semestre/juegos moviles/2x/Game/Game3D/Packages/packages-lock.json
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
       ticks: 638506358323597486
     m_Hash: 1755400957
+=======
+      ticks: 638506275465648696
+    m_Hash: 2606399936
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
+<<<<<<< HEAD
 m_ProjectPath: D:/Univa/7mo/Moviles/2do Parcial/Git_Game/Game/Game3D/Packages
 m_EditorVersion: 2021.3.21f1 (1b156197d683)
 m_ResolvedPackages:
@@ -28,6 +45,17 @@ m_ResolvedPackages:
   version: 2.0.1
   source: 1
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.collab-proxy@2.0.1
+=======
+m_ProjectPath: C:/Users/Mateo Arboleda/OneDrive/Documentos/5- semestre/juegos moviles/2x/Game/Game3D/Packages
+m_EditorVersion: 2021.3.25f1 (68ef2c4f8861)
+m_ResolvedPackages:
+- packageId: com.unity.collab-proxy@2.0.4
+  testable: 0
+  isDirectDependency: 1
+  version: 2.0.4
+  source: 1
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.collab-proxy@2.0.4
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -37,9 +65,15 @@ m_ResolvedPackages:
     url: 
   category: Editor
   type: asset
+<<<<<<< HEAD
   description: The package gives you the ability to use the Unity Version Control
     in the Unity editor. To use Unity Version Control, a subscription is required.
     Learn more about how you can get started for free by visiting plasticscm.com.
+=======
+  description: The package gives you the ability to use Unity Version Control in
+    the Unity editor. To use Unity Version Control, a subscription is required. Learn
+    more about how you can get started for free by visiting plasticscm.com.
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   status: 0
   errors: []
   versions:
@@ -116,8 +150,11 @@ m_ResolvedPackages:
     - 2.2.0
     - 2.3.1
     compatible:
+<<<<<<< HEAD
     - 2.0.1
     - 2.0.3
+=======
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
     - 2.0.4
     - 2.0.5
     - 2.0.7
@@ -155,23 +192,38 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
+<<<<<<< HEAD
   datePublishedTicks: 638125977010000000
+=======
+  datePublishedTicks: 638176024310000000
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.collab-proxy@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.cloud.collaborate.git
+<<<<<<< HEAD
     revision: 8740b4e630f877841cfa8e22ddfbcb237b70a9e6
     path: 
   unityLifecycle:
     version: 2.0.1
+=======
+    revision: dc15ef2ed609e8c19d0525a46c5bf7dd78df8432
+    path: 
+  unityLifecycle:
+    version: 2.0.4
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
     nextVersion: 
 - packageId: com.unity.feature.development@1.0.1
   testable: 0
   isDirectDependency: 1
   version: 1.0.1
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.feature.development@1.0.1
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.feature.development@1.0.1
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.feature.development
   name: com.unity.feature.development
   displayName: Engineering
@@ -210,7 +262,11 @@ m_ResolvedPackages:
     version: default
   resolvedDependencies:
   - name: com.unity.ide.visualstudio
+<<<<<<< HEAD
     version: 2.0.17
+=======
+    version: 2.0.18
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   - name: com.unity.test-framework
     version: 1.1.31
   - name: com.unity.ext.nunit
@@ -220,7 +276,11 @@ m_ResolvedPackages:
   - name: com.unity.modules.jsonserialize
     version: 1.0.0
   - name: com.unity.ide.rider
+<<<<<<< HEAD
     version: 3.0.18
+=======
+    version: 3.0.21
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   - name: com.unity.ide.vscode
     version: 1.2.5
   - name: com.unity.editorcoroutines
@@ -228,7 +288,11 @@ m_ResolvedPackages:
   - name: com.unity.performance.profile-analyzer
     version: 1.2.2
   - name: com.unity.testtools.codecoverage
+<<<<<<< HEAD
     version: 1.2.2
+=======
+    version: 1.2.3
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   - name: com.unity.settings-manager
     version: 1.0.3
   keywords: []
@@ -253,12 +317,21 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.0.1
     nextVersion: 
+<<<<<<< HEAD
 - packageId: com.unity.ide.rider@3.0.18
   testable: 0
   isDirectDependency: 1
   version: 3.0.18
   source: 1
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.ide.rider@3.0.18
+=======
+- packageId: com.unity.ide.rider@3.0.21
+  testable: 0
+  isDirectDependency: 1
+  version: 3.0.21
+  source: 1
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.ide.rider@3.0.21
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -318,8 +391,11 @@ m_ResolvedPackages:
     - 3.0.27
     - 3.0.28
     compatible:
+<<<<<<< HEAD
     - 3.0.18
     - 3.0.20
+=======
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
     - 3.0.21
     - 3.0.22
     - 3.0.24
@@ -345,12 +421,17 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
+<<<<<<< HEAD
   datePublishedTicks: 638088746970000000
+=======
+  datePublishedTicks: 638175749180000000
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.rider@3.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.rider.git
+<<<<<<< HEAD
     revision: b40b39e6834c2915637f431d002d1f3dd8ec9ce5
     path: 
   unityLifecycle:
@@ -362,6 +443,19 @@ m_ResolvedPackages:
   version: 2.0.17
   source: 1
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.ide.visualstudio@2.0.17
+=======
+    revision: bb7732dcafe867368246b7661dda05368b74dd8e
+    path: 
+  unityLifecycle:
+    version: 3.0.21
+    nextVersion: 
+- packageId: com.unity.ide.visualstudio@2.0.18
+  testable: 0
+  isDirectDependency: 1
+  version: 2.0.18
+  source: 1
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.ide.visualstudio@2.0.18
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -403,7 +497,10 @@ m_ResolvedPackages:
     - 2.0.21
     - 2.0.22
     compatible:
+<<<<<<< HEAD
     - 2.0.17
+=======
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
     - 2.0.18
     - 2.0.20
     - 2.0.21
@@ -432,23 +529,38 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
+<<<<<<< HEAD
   datePublishedTicks: 638059987360000000
+=======
+  datePublishedTicks: 638173205920000000
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.ide.visualstudio@2.0/manual/index.html
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.visualstudio.git
+<<<<<<< HEAD
     revision: 1f126893bfb18ea9661fb15771613e841467073c
     path: 
   unityLifecycle:
     version: 2.0.17
+=======
+    revision: 9d3c07127cbe1916b8abbfd18f71fb8d9df8008c
+    path: 
+  unityLifecycle:
+    version: 2.0.18
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
     nextVersion: 
 - packageId: com.unity.ide.vscode@1.2.5
   testable: 0
   isDirectDependency: 1
   version: 1.2.5
   source: 1
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.ide.vscode@1.2.5
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.ide.vscode@1.2.5
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.ide.vscode
   name: com.unity.ide.vscode
   displayName: Visual Studio Code Editor
@@ -510,7 +622,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.1.31
   source: 1
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.test-framework@1.1.31
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.test-framework@1.1.31
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -642,7 +758,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.6
   source: 1
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.textmeshpro@3.0.6
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.textmeshpro@3.0.6
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.textmeshpro
   name: com.unity.textmeshpro
   displayName: TextMeshPro
@@ -820,12 +940,21 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 3.0.6
     nextVersion: 
+<<<<<<< HEAD
 - packageId: com.unity.timeline@1.6.4
   testable: 0
   isDirectDependency: 1
   version: 1.6.4
   source: 1
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.timeline@1.6.4
+=======
+- packageId: com.unity.timeline@1.6.5
+  testable: 0
+  isDirectDependency: 1
+  version: 1.6.5
+  source: 1
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.timeline@1.6.5
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -927,7 +1056,10 @@ m_ResolvedPackages:
     - 1.8.5
     - 1.8.6
     compatible:
+<<<<<<< HEAD
     - 1.6.4
+=======
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
     - 1.6.5
     - 1.7.0-pre.1
     - 1.7.0-pre.2
@@ -980,23 +1112,39 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
+<<<<<<< HEAD
   datePublishedTicks: 637789039180000000
   documentationUrl: 
+=======
+  datePublishedTicks: 638182037450000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.timeline@1.6/manual/index.html
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.timeline.git
+<<<<<<< HEAD
     revision: d7e1eb6805737974459309b7d6e7db58635dd167
     path: 
   unityLifecycle:
     version: 1.6.4
+=======
+    revision: 4ed67a7e62ce940db3d44dc5eca8fade1c664aed
+    path: 
+  unityLifecycle:
+    version: 1.6.5
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
     nextVersion: 
 - packageId: com.unity.ugui@1.0.0
   testable: 0
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.ugui@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.ugui@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -1062,7 +1210,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.0
   source: 1
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.visualscripting@1.8.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.visualscripting@1.8.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -1157,7 +1309,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.ai@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.ai@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -1206,7 +1362,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -1254,7 +1414,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.animation@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.animation@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -1303,7 +1467,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -1352,7 +1520,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.audio@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.audio@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -1401,7 +1573,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.cloth@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.cloth@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -1454,7 +1630,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.director@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.director@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1511,7 +1691,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1561,7 +1745,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.imgui@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.imgui@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1610,7 +1798,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1659,7 +1851,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1708,7 +1904,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.physics@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.physics@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1757,7 +1957,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1806,7 +2010,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1859,7 +2067,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.terrain@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.terrain@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1908,7 +2120,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -1965,7 +2181,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -2017,7 +2237,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.ui@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.ui@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -2066,7 +2290,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.uielements@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.uielements@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2131,7 +2359,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.umbra@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.umbra@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2180,7 +2412,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2237,7 +2473,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2286,7 +2526,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2343,7 +2587,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2400,7 +2648,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2457,7 +2709,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2530,7 +2786,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -2583,7 +2843,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.video@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.video@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -2644,7 +2908,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.vr@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.vr@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -2707,7 +2975,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.wind@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.wind@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -2756,7 +3028,11 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.xr@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.xr@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -2817,7 +3093,11 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -2870,7 +3150,11 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.modules.uielementsnative
   name: com.unity.modules.uielementsnative
   displayName: UIElements Native
@@ -2930,7 +3214,11 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.6
   source: 1
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.ext.nunit@1.0.6
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.ext.nunit@1.0.6
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -2995,7 +3283,11 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 1
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.editorcoroutines@1.0.0
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.editorcoroutines@1.0.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.editorcoroutines
   name: com.unity.editorcoroutines
   displayName: Editor Coroutines
@@ -3054,7 +3346,11 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.2.2
   source: 1
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.performance.profile-analyzer@1.2.2
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.performance.profile-analyzer@1.2.2
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.performance.profile-analyzer
   name: com.unity.performance.profile-analyzer
   displayName: Profile Analyzer
@@ -3114,12 +3410,21 @@ m_ResolvedPackages:
   unityLifecycle:
     version: 1.2.2
     nextVersion: 
+<<<<<<< HEAD
 - packageId: com.unity.testtools.codecoverage@1.2.2
   testable: 0
   isDirectDependency: 0
   version: 1.2.2
   source: 1
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2
+=======
+- packageId: com.unity.testtools.codecoverage@1.2.3
+  testable: 0
+  isDirectDependency: 0
+  version: 1.2.3
+  source: 1
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.testtools.codecoverage@1.2.3
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.testtools.codecoverage
   name: com.unity.testtools.codecoverage
   displayName: Code Coverage
@@ -3169,7 +3474,10 @@ m_ResolvedPackages:
     - 1.2.4
     - 1.2.5
     compatible:
+<<<<<<< HEAD
     - 1.2.2
+=======
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
     - 1.2.3
     - 1.2.4
     - 1.2.5
@@ -3205,23 +3513,39 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 0
   isAssetStorePackage: 0
+<<<<<<< HEAD
   datePublishedTicks: 638047147810000000
   documentationUrl: 
+=======
+  datePublishedTicks: 638169790470000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.testtools.codecoverage@1.2/manual/index.html
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   hasRepository: 1
   repository:
     type: git
     url: https://github.cds.internal.unity3d.com/unity/com.unity.testtools.codecoverage.git
+<<<<<<< HEAD
     revision: 4178e047a15e206f715d23af69b02acd367bb000
     path: 
   unityLifecycle:
     version: 1.2.2
+=======
+    revision: d4b7ffdbe5fd9b2506f04f112caa0ed3f898c59b
+    path: 
+  unityLifecycle:
+    version: 1.2.3
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
     nextVersion: 
 - packageId: com.unity.settings-manager@1.0.3
   testable: 0
   isDirectDependency: 0
   version: 1.0.3
   source: 1
+<<<<<<< HEAD
   resolvedPath: D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D\Library\PackageCache\com.unity.settings-manager@1.0.3
+=======
+  resolvedPath: C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D\Library\PackageCache\com.unity.settings-manager@1.0.3
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   assetPath: Packages/com.unity.settings-manager
   name: com.unity.settings-manager
   displayName: Settings Manager

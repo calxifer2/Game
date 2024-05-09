@@ -3,10 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - Arbol
   - Roca
   - Cartel
+=======
+  tags: []
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   layers:
   - Default
   - TransparentFX
@@ -16,7 +20,11 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
   - Ground
+=======
+  - 
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   - 
   - 
   - 

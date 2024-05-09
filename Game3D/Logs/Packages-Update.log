@@ -1,12 +1,21 @@
 
+<<<<<<< HEAD
 === Mon May  6 18:43:31 2024
+=======
+=== Mon May  6 16:25:14 2024
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
 
 Packages were changed.
 Update Mode: mergeDefaultDependencies
 
 The following packages were added:
+<<<<<<< HEAD
   com.unity.ide.rider@3.0.18
   com.unity.ide.visualstudio@2.0.17
+=======
+  com.unity.ide.rider@3.0.21
+  com.unity.ide.visualstudio@2.0.18
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   com.unity.ide.vscode@1.2.5
   com.unity.modules.ai@1.0.0
   com.unity.modules.androidjni@1.0.0
@@ -41,6 +50,11 @@ The following packages were added:
   com.unity.modules.xr@1.0.0
   com.unity.test-framework@1.1.31
 The following packages were updated:
+<<<<<<< HEAD
   com.unity.collab-proxy from version 1.13.5 to 2.0.1
   com.unity.timeline from version 1.6.2 to 1.6.4
+=======
+  com.unity.collab-proxy from version 1.13.5 to 2.0.4
+  com.unity.timeline from version 1.6.2 to 1.6.5
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   com.unity.visualscripting from version 1.7.6 to 1.8.0

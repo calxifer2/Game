@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 D:\Univa\7mo\Moviles\2do Parcial\Git_Game\Game\Game3D
+=======
+C:\Users\Mateo Arboleda\OneDrive\Documentos\5- semestre\juegos moviles\2x\Game\Game3D
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008

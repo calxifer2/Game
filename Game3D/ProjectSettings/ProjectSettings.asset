@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 24
+<<<<<<< HEAD
   productGUID: 090e69ba55546234890217ce2ccfb0d2
+=======
+  productGUID: b3486bbadd4fa6645a1a99d84cf54e04
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -176,10 +180,17 @@ PlayerSettings:
   StripUnusedMeshComponents: 1
   VertexChannelCompressionMask: 4054
   iPhoneSdkVersion: 988
+<<<<<<< HEAD
   iOSTargetOSVersionString: 11.0
   tvOSSdkVersion: 0
   tvOSRequireExtendedGameController: 0
   tvOSTargetOSVersionString: 11.0
+=======
+  iOSTargetOSVersionString: 12.0
+  tvOSSdkVersion: 0
+  tvOSRequireExtendedGameController: 0
+  tvOSTargetOSVersionString: 12.0
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   uIPrerenderedIcon: 0
   uIRequiresPersistentWiFi: 0
   uIRequiresFullScreen: 1
@@ -269,6 +280,7 @@ PlayerSettings:
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
   m_BuildTargetIcons: []
+<<<<<<< HEAD
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: Android
     m_Icons:
@@ -362,6 +374,9 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 0
       m_SubKind: 
+=======
+  m_BuildTargetPlatformIcons: []
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
@@ -811,11 +826,19 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
+<<<<<<< HEAD
   cloudProjectId: 92e1c441-c384-492e-82b7-70562024bfbc
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: Game3D
   organizationId: vic_ap26
+=======
+  cloudProjectId: 722235d7-7ef6-4d9c-9de4-8fb476a94333
+  framebufferDepthMemorylessMode: 0
+  qualitySettingsNames: []
+  projectName: Game3D
+  organizationId: calxifer301
+>>>>>>> 4d86d43bb5fa11c8b075261ed83545b4d9ba7008
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
