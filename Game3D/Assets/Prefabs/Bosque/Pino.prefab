@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5496133906174740691}
   - component: {fileID: 5124112147342656320}
   - component: {fileID: 7637935887867639690}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pino
   m_TagString: Arbol
   m_Icon: {fileID: 0}

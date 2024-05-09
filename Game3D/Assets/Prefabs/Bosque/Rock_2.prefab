@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4171768475637260096}
   - component: {fileID: 3480209418811732790}
   - component: {fileID: 1666519936511794604}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rock_2
   m_TagString: Roca
   m_Icon: {fileID: 0}

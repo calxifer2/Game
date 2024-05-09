@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3861771645397981998}
   - component: {fileID: 3205221464998764066}
   - component: {fileID: 4055851472199843011}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Arbol_2.003
   m_TagString: Arbol
   m_Icon: {fileID: 0}
