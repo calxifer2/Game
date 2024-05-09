@@ -37,7 +37,7 @@ public class Enemigo : MonoBehaviour
             switch (rutina)
             {
                 case 0:
-                    //anim.SetBool("Armature.001|ArmatureAction", false);
+                    anim.SetBool("Idle", false);
                     break;
 
                 case 1:
@@ -49,7 +49,7 @@ public class Enemigo : MonoBehaviour
                 case 2:
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
                     transform.Translate(Vector3.forward * 1 * Time.deltaTime);
-                    //anim.SetBool("Armature.001|ArmatureAction", true);
+                    anim.SetBool("Idle", true);
                     break;
             }
         }
