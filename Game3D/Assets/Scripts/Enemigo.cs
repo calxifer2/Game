@@ -37,7 +37,8 @@ public class Enemigo : MonoBehaviour
             switch (rutina)
             {
                 case 0:
-                    anim.SetBool("Idle", false);
+                    anim.SetBool("Idle", true);
+                    anim.SetBool("Attack", false);
                     break;
 
                 case 1:
@@ -50,6 +51,7 @@ public class Enemigo : MonoBehaviour
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
                     transform.Translate(Vector3.forward * 1 * Time.deltaTime);
                     anim.SetBool("Idle", true);
+                    anim.SetBool("Attack", false);
                     break;
             }
         }
@@ -59,10 +61,10 @@ public class Enemigo : MonoBehaviour
             lookPos.y = 0;
             var rotation = Quaternion.LookRotation(lookPos);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 3);
-            //anim.SetBool("walk", false);
+            anim.SetBool("Idle", false);
 
-            //anim.SetBool("run", true);
-            transform.Translate(Vector3.forward * 5 * Time.deltaTime);
+            anim.SetBool("Attack", true);
+            transform.Translate(Vector3.forward * 4 * Time.deltaTime);
         }
         
     }
