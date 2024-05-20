@@ -347,7 +347,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3006874437176596960
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +453,7 @@ GameObject:
   - component: {fileID: 4597287672509919755}
   - component: {fileID: 4597287672509919756}
   - component: {fileID: 4597287672509919757}
+  - component: {fileID: 7941323905529802336}
   m_Layer: 0
   m_Name: Baltoy_Attack
   m_TagString: Untagged
@@ -512,7 +512,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &4597287672509919757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -531,6 +530,19 @@ MonoBehaviour:
   angulo: {x: 0, y: 0, z: 0, w: 0}
   grado: 0
   target: {fileID: 4597287672509919758}
+--- !u!114 &7941323905529802336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4597287672509919758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d558c0f03acf64549aa863ef0842f9f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 100
 --- !u!1 &4910455365500697331
 GameObject:
   m_ObjectHideFlags: 0
