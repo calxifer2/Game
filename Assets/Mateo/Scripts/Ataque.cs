@@ -4,11 +4,25 @@ using UnityEngine;
 
 public class Ataque : MonoBehaviour
 {
-  private void Update()
-  {
-    if(Input.GetKeyDown(KeyCode.F))
+    public GameObject Filo;
+
+
+    void Start()
     {
-        gameObject.GetComponent<Animator>().SetTrigger("Sword");
+        Filo.GetComponent<BoxCollider>().isTrigger = false;
     }
-  }
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            gameObject.GetComponent<Animator>().SetTrigger("Sword");
+            Filo.GetComponent<BoxCollider>().isTrigger = true;
+            StartCoroutine(finAtaque());
+        }
+    }
+    IEnumerator finAtaque()
+    {
+        yield return new WaitForSeconds(0.5f);
+    Filo.GetComponent<BoxCollider>().isTrigger = false;
+    }
 }
