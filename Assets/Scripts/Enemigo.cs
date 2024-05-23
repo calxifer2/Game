@@ -39,7 +39,6 @@ public class Enemigo : MonoBehaviour
                 case 0:
                     anim.SetBool("Idle", true);
                     anim.SetBool("Attack", false);
-                    anim.SetBool("Muerte", false);
                     break;
 
                 case 1:
@@ -53,7 +52,6 @@ public class Enemigo : MonoBehaviour
                     transform.Translate(Vector3.forward * 1 * Time.deltaTime);
                     anim.SetBool("Idle", true);
                     anim.SetBool("Attack", false);
-                    anim.SetBool("Muerte", false);
                     break;
             }
         }
