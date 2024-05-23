@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: c2eb3b93127910b48ae802fd01fcc5b5
 ModelImporter:
-  serializedVersion: 22103
+  serializedVersion: 22200
   internalIDToNameTable:
   - first:
       74: 4781951162920444690
@@ -29,17 +29,17 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 02..
-    second: {fileID: 2800000, guid: c0b4b9ac631696b45b76b54c7c7bde9a, type: 3}
+    second: {fileID: 2800000, guid: afec2324ef584f548a35340996046793, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: 12
-    second: {fileID: 2800000, guid: 3ab0e1f23cb990e41abfd9f99a32a7b0, type: 3}
+    second: {fileID: 2800000, guid: 78f19741a848eb24ba50189865052557, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Tiles129B
-    second: {fileID: 2800000, guid: 3cc3aeae4084c344ba3e3e3dd3435948, type: 3}
+    second: {fileID: 2800000, guid: ea234392820217347809a72ed9f45ac2, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -100,11 +100,12 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 100
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
@@ -154,7 +155,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 100
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
