@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class DinoMovimientos : MonoBehaviour
 {
-    public float speed = 2f; // Velocidad del enemigo
-    public float randomMoveInterval = 3f; // Intervalo de tiempo para cambiar de dirección en movimientos aleatorios
-    public float detectionRange = 15f; // Rango de detección del jugador
-    private Transform player; // Referencia al transform del jugador
-    private bool isPlayerInRange = false; // Bandera para comprobar si el jugador está cerca
-    private Vector3 randomDirection; // Dirección aleatoria
-    private float timeSinceLastMove = 0f; // Tiempo transcurrido desde el último cambio de dirección
+    public float velocidad = 1f;
+    public float randomMoveInterval = 9f;
+    public float detectionRange = 15f; 
+    private Transform player;
+    private bool isPlayerInRange = false;
+    private Vector3 randomDirection; 
+    private float timeSinceLastMove = 2f; // Tiempo transcurrido desde el último cambio de dirección
 
     void Start()
     {
@@ -28,10 +28,9 @@ public class DinoMovimientos : MonoBehaviour
     {
         if (player != null)
         {
-            // Calcula la distancia al jugador
             float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-            // Si el jugador está dentro del rango de detección, moverse hacia él
+
             if (distanceToPlayer <= detectionRange)
             {
                 isPlayerInRange = true;
@@ -57,7 +56,7 @@ public class DinoMovimientos : MonoBehaviour
         // Dirección hacia el jugador
         Vector3 direction = (player.position - transform.position).normalized;
         // Movimiento hacia el jugador
-        transform.position += direction * speed * Time.deltaTime;
+        transform.position += direction * velocidad * Time.deltaTime;
     }
 
     void MoveRandomly()
@@ -73,7 +72,7 @@ public class DinoMovimientos : MonoBehaviour
         }
 
         // Mueve al enemigo en la dirección aleatoria actual
-        transform.position += randomDirection * speed * Time.deltaTime;
+        transform.position += randomDirection * velocidad * Time.deltaTime;
     }
 
     void GenerateRandomDirection()
