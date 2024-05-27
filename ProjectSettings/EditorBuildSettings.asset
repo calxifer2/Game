@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Inicio.unity
     guid: a99173f16c2b0944e89b782dc9e83dec
   - enabled: 1
-    path: Assets/Scenes/Coliseo.unity
+    path: Assets/Scenes/Victor.unity
     guid: fdd532ee657ba3f4390189c4ff2a2089
   m_configObjects: {}
