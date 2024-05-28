@@ -19,5 +19,8 @@ EditorBuildSettings:
     guid: efdaf6df44f14ba4c84780e8ed0fa4a3
   - enabled: 1
     path: Assets/Scenes/Victor.unity
-    guid: fdd532ee657ba3f4390189c4ff2a2089
+    guid: 74390780899621140b03b0ad0ac6451c
+  - enabled: 1
+    path: Assets/Scenes/Mateo.unity
+    guid: e0d687f7745409b4f83ed58a40455913
   m_configObjects: {}
