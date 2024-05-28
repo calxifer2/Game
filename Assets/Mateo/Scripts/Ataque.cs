@@ -1,28 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Ataque : MonoBehaviour
 {
     public GameObject Filo;
+    public Animator swordAnimator;
 
+    private bool isAttacking = false;
 
     void Start()
     {
         Filo.GetComponent<BoxCollider>().isTrigger = false;
     }
-    private void Update()
+
+    public void OnAttackButtonPressed()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!isAttacking)
         {
-            gameObject.GetComponent<Animator>().SetTrigger("Sword");
+            isAttacking = true;
+            swordAnimator.SetTrigger("Sword");
             Filo.GetComponent<BoxCollider>().isTrigger = true;
-            StartCoroutine(finAtaque());
+            StartCoroutine(EndAttack());
         }
     }
-    IEnumerator finAtaque()
+
+    IEnumerator EndAttack()
     {
         yield return new WaitForSeconds(0.5f);
-    Filo.GetComponent<BoxCollider>().isTrigger = false;
+        Filo.GetComponent<BoxCollider>().isTrigger = false;
+        isAttacking = false;
     }
 }

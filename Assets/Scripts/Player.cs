@@ -7,12 +7,13 @@ public class Player : MonoBehaviour
 {
     public CharacterController controller;
     public float speed = 8f;
-
     public float gravity = -12f;
     public float jumpHeight = 2;
     public Transform groundCheck;
     public float groundDistance = 0.3f;
     public LayerMask groundMask;
+
+    public FixedJoystick movementJoystick; // Joystick para movimiento
 
     public int maxHealth = 100;
     private int currentHealth;
@@ -42,12 +43,13 @@ public class Player : MonoBehaviour
             velocity.y = -2f;
         }
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        // Usar el joystick para el movimiento
+        float x = movementJoystick.Horizontal;
+        float z = movementJoystick.Vertical;
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * speed * Time.deltaTime);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (isGrounded && movementJoystick.Vertical > 0.5f) // Asegurar salto solo cuando el joystick se mueve hacia adelante
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
@@ -69,7 +71,8 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        // Lógica para cuando el jugador muere
+        // LÃ³gica para cuando el jugador muere
         Debug.Log("Jugador ha muerto.");
     }
 }
+
