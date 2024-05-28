@@ -35,7 +35,7 @@ public class Enemigo : MonoBehaviour
         }
         else
         {
-            Debug.LogError("¡Error! No se encontró el objeto del jugador.");
+            Debug.LogError("ï¿½Error! No se encontrï¿½ el objeto del jugador.");
         }
 
         currentHealth = maxHealth;
@@ -144,18 +144,18 @@ public class Enemigo : MonoBehaviour
 
         audioSource.Play();
 
-        // Verificar si el Animator tiene el parámetro "Morir"
+        // Verificar si el Animator tiene el parï¿½metro "Morir"
         if (anim != null && HasAnimatorParameter("Morir"))
         {
             anim.SetTrigger("Morir");
-            Destroy(gameObject, 2f); // Destruir el objeto después de 2 segundos
+            Destroy(gameObject, 2f); // Destruir el objeto despuï¿½s de 2 segundos
         }
         else
         {
-            Destroy(gameObject, 1f); // Destruir si no tiene la animación "Morir"
+            Destroy(gameObject, 1f); // Destruir si no tiene la animaciï¿½n "Morir"
         }
 
-        // Método para verificar si el Animator tiene un parámetro específico
+        // Mï¿½todo para verificar si el Animator tiene un parï¿½metro especï¿½fico
         bool HasAnimatorParameter(string paramName)
         {
             foreach (AnimatorControllerParameter param in anim.parameters)
@@ -168,13 +168,13 @@ public class Enemigo : MonoBehaviour
             return false;
         }
 
-        // Llamar al GameManager para aumentar la puntuación
+        // Llamar al GameManager para aumentar la puntuaciï¿½n
         Score.instance.IncreaseScore(scoreValue);
 
-        // Aumentar la vida del jugador si no excede su vida máxima
+        // Aumentar la vida del jugador si no excede su vida mï¿½xima
         if (player != null)
         {
-            player.IncreaseHealth(15); // Ajusta el valor de aumento según sea necesario
+            player.IncreaseHealth(15); // Ajusta el valor de aumento segï¿½n sea necesario
         }
     }
 
