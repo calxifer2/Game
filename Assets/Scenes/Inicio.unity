@@ -1471,7 +1471,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 470500688}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: EscenaNvl3
+        m_MethodName: EscenaNvl1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

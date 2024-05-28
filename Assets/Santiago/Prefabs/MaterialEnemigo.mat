@@ -73,7 +73,7 @@ Material:
     - _Lumin: 0
     - _MaxLight: 1
     - _Metallic: 0
-    - _MinLight: 0
+    - _MinLight: 0.1
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Offset: 0
@@ -86,8 +86,8 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Steps: 3
-    - _StpSmooth: 0.768
+    - _Steps: 5
+    - _StpSmooth: 0.5
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
