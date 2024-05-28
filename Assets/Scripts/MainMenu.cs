@@ -46,6 +46,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Mateo");
     }
 
+    public void EscenaNvl5()
+    {
+        SceneManager.LoadScene("Endless");
+    }
+
     public void Salir()
     {
         Application.Quit();
