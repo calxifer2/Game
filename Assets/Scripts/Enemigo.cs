@@ -141,6 +141,33 @@ public class Enemigo : MonoBehaviour
 
     void Morir()
     {
+
+        audioSource.Play();
+
+        // Verificar si el Animator tiene el parámetro "Morir"
+        if (anim != null && HasAnimatorParameter("Morir"))
+        {
+            anim.SetTrigger("Morir");
+            Destroy(gameObject, 2f); // Destruir el objeto después de 2 segundos
+        }
+        else
+        {
+            Destroy(gameObject, 1f); // Destruir si no tiene la animación "Morir"
+        }
+
+        // Método para verificar si el Animator tiene un parámetro específico
+        bool HasAnimatorParameter(string paramName)
+        {
+            foreach (AnimatorControllerParameter param in anim.parameters)
+            {
+                if (param.name == paramName)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
         // Llamar al GameManager para aumentar la puntuación
         Score.instance.IncreaseScore(scoreValue);
 
@@ -149,11 +176,6 @@ public class Enemigo : MonoBehaviour
         {
             player.IncreaseHealth(15); // Ajusta el valor de aumento según sea necesario
         }
-
-        audioSource.Play();
-        anim.SetTrigger("Morir");
-        Destroy(gameObject, 2f);
-
     }
 
 }
