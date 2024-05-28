@@ -8,12 +8,12 @@ public class CodigoVolumen : MonoBehaviour
 
     public Slider slider;
     public float sliderValue;
-    public Image imagenMute;
+    //public Image imagenMute;
 
 
     void Start()
     {
-        slider.value = PlayerPrefs.GetFloat("volumenAudio",0.5f);
+        //slider.value = PlayerPrefs.GetFloat("volumenAudio",0.5f);
         AudioListener.volume = slider.value;
         //RevisarMute();
     }
@@ -26,16 +26,4 @@ public class CodigoVolumen : MonoBehaviour
         //RevisarMute();
     }
 
-    /*public void RevisarMute()
-    {
-        if(sliderValue == 0)
-        {
-            imagenMute.enabled = true;
-        }
-        else
-        {
-            imagenMute.enabled = false;
-        }
-    }
-    */
 }
