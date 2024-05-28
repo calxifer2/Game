@@ -12,24 +12,50 @@ public class Ataque : MonoBehaviour
 
     void Start()
     {
-        Filo.GetComponent<BoxCollider>().isTrigger = false;
+        if (Filo != null)
+        {
+            Filo.GetComponent<BoxCollider>().isTrigger = false;
+        }
+        else
+        {
+            Debug.LogError("Filo no está asignado en el inspector.");
+        }
+
+        if (swordAnimator == null)
+        {
+            Debug.LogError("swordAnimator no está asignado en el inspector.");
+        }
     }
 
     public void OnAttackButtonPressed()
     {
         if (!isAttacking)
         {
-            isAttacking = true;
-            swordAnimator.SetTrigger("Sword");
-            Filo.GetComponent<BoxCollider>().isTrigger = true;
-            StartCoroutine(EndAttack());
+            if (!isAttacking)
+            {
+                isAttacking = true;
+                if (swordAnimator != null)
+                {
+                    swordAnimator.SetTrigger("Sword");
+                }
+
+                if (Filo != null)
+                {
+                    Filo.GetComponent<BoxCollider>().isTrigger = true;
+                }
+
+                StartCoroutine(EndAttack());
+            }
         }
     }
 
     IEnumerator EndAttack()
     {
         yield return new WaitForSeconds(0.5f);
-        Filo.GetComponent<BoxCollider>().isTrigger = false;
+        if (Filo != null)
+        {
+            Filo.GetComponent<BoxCollider>().isTrigger = false;
+        }
         isAttacking = false;
     }
 }
