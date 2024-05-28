@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -13,27 +14,27 @@ public class Player : MonoBehaviour
     public float groundDistance = 0.3f;
     public LayerMask groundMask;
 
+    public int maxHealth = 100;
+    private int currentHealth;
+    public Slider healthBar;
+
     Vector3 velocity;
     bool isGrounded;
 
-
     void Start()
     {
-        
-
-
+        currentHealth = maxHealth;
+        healthBar.maxValue = maxHealth;
+        healthBar.value = currentHealth;
     }
 
     void Update()
     {
-
         movimiento();
-
     }
 
     void movimiento()
     {
-
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if (isGrounded && velocity.y < 0)
@@ -52,7 +53,23 @@ public class Player : MonoBehaviour
         }
 
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity*Time.deltaTime);
+        controller.Move(velocity * Time.deltaTime);
+    }
 
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.value = currentHealth;
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        // Lógica para cuando el jugador muere
+        Debug.Log("Jugador ha muerto.");
     }
 }
