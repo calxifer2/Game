@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+
     public CharacterController controller;
     public float speed = 8f;
 
@@ -15,14 +16,29 @@ public class Player : MonoBehaviour
     public LayerMask groundMask;
 
     public int maxHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
     public Slider healthBar;
 
     Vector3 velocity;
     bool isGrounded;
 
+    public GameObject gameOverPanel;
+    public Text gameOverScoreText;
+    public Text gameOverHighScoreText;
+
+
+    public AudioSource deathSound;
+    public AudioSource healSound;
+    public AudioSource grountSound;
+
     void Start()
     {
+
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(false);
+        }
+
         currentHealth = maxHealth;
         healthBar.maxValue = maxHealth;
         healthBar.value = currentHealth;
@@ -56,10 +72,22 @@ public class Player : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
     }
 
+
+    public void IncreaseHealth(int amount)  // Método para aumentar la vida del jugador
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Min(currentHealth, maxHealth); // Asegura que la vida actual no exceda la vida máxima
+        healSound.Play();
+    }
+
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.value = currentHealth;
+
+        grountSound.Play();
+
+        Debug.Log("Current Health: " + currentHealth);
 
         if (currentHealth <= 0)
         {
@@ -69,7 +97,26 @@ public class Player : MonoBehaviour
 
     void Die()
     {
-        // Lógica para cuando el jugador muere
         Debug.Log("Jugador ha muerto.");
+        deathSound.Play();
+
+        // Verificar y actualizar la puntuación más alta
+        Score.instance.CheckHighScore();
+
+        // Mostrar la puntuación y la puntuación más alta en el panel de Game Over
+        if (gameOverPanel != null && gameOverScoreText != null && gameOverHighScoreText != null)
+        {
+            gameOverScoreText.text = "0" + Score.instance.GetScore();
+            gameOverHighScoreText.text = "000" + Score.instance.GetHighScore();
+            gameOverPanel.SetActive(true);
+        }
     }
+
+    // Este método es llamado cuando el jugador es golpeado por un enemigo
+    public void OnEnemyHit(int damage)
+    {
+        TakeDamage(damage);
+        Debug.Log("Player Golpeado");
+    }
+
 }
