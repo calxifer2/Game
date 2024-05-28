@@ -8,12 +8,13 @@ public class Player : MonoBehaviour
 
     public CharacterController controller;
     public float speed = 8f;
-
     public float gravity = -12f;
     public float jumpHeight = 2;
     public Transform groundCheck;
     public float groundDistance = 0.3f;
     public LayerMask groundMask;
+
+    public FixedJoystick movementJoystick; // Joystick para movimiento
 
     public int maxHealth = 100;
     public int currentHealth;
@@ -58,12 +59,13 @@ public class Player : MonoBehaviour
             velocity.y = -2f;
         }
 
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        // Usar el joystick para el movimiento
+        float x = movementJoystick.Horizontal;
+        float z = movementJoystick.Vertical;
         Vector3 move = transform.right * x + transform.forward * z;
         controller.Move(move * speed * Time.deltaTime);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (isGrounded && movementJoystick.Vertical > 0.5f) // Asegurar salto solo cuando el joystick se mueve hacia adelante
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
@@ -73,10 +75,10 @@ public class Player : MonoBehaviour
     }
 
 
-    public void IncreaseHealth(int amount)  // Método para aumentar la vida del jugador
+    public void IncreaseHealth(int amount)  // Mï¿½todo para aumentar la vida del jugador
     {
         currentHealth += amount;
-        currentHealth = Mathf.Min(currentHealth, maxHealth); // Asegura que la vida actual no exceda la vida máxima
+        currentHealth = Mathf.Min(currentHealth, maxHealth); // Asegura que la vida actual no exceda la vida mï¿½xima
         healSound.Play();
     }
 
@@ -97,13 +99,14 @@ public class Player : MonoBehaviour
 
     void Die()
     {
+        // LÃ³gica para cuando el jugador muere
         Debug.Log("Jugador ha muerto.");
         deathSound.Play();
 
-        // Verificar y actualizar la puntuación más alta
+        // Verificar y actualizar la puntuaciï¿½n mï¿½s alta
         Score.instance.CheckHighScore();
 
-        // Mostrar la puntuación y la puntuación más alta en el panel de Game Over
+        // Mostrar la puntuaciï¿½n y la puntuaciï¿½n mï¿½s alta en el panel de Game Over
         if (gameOverPanel != null && gameOverScoreText != null && gameOverHighScoreText != null)
         {
             gameOverScoreText.text = "0" + Score.instance.GetScore();
@@ -112,7 +115,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    // Este método es llamado cuando el jugador es golpeado por un enemigo
+    // Este mï¿½todo es llamado cuando el jugador es golpeado por un enemigo
     public void OnEnemyHit(int damage)
     {
         TakeDamage(damage);
@@ -120,3 +123,4 @@ public class Player : MonoBehaviour
     }
 
 }
+
