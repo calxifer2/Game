@@ -4,84 +4,48 @@ using UnityEngine;
 
 public class Enemigo_kathe : MonoBehaviour
 {
-    public int rutina;
-    public float cronometro;
-    public Animator anim;
-    public Vector3 direccionMovimiento; // Nueva variable para almacenar la dirección de movimiento
-    public GameObject target;
+     public Transform player;
+    public float detectionRadius = 10f; 
+    public float speed = 3f;
 
-    public GameObject enemyPrefab; // Prefab del enemigo que quieres instanciar
-    public float spawnInterval = 10f; // Intervalo de tiempo en segundos entre cada aparición
-    private float spawnTimer; // Temporizador para la aparición de enemigos
-
-    void Start()
-    {
-        anim = GetComponent<Animator>();
-        target = GameObject.Find("Player");
-        spawnTimer = spawnInterval; // Inicializa el temporizador
-    }
+    private bool isPlayerInRange = false;
 
     void Update()
     {
-        Comportamiento_Enemigo();
-        GestionarAparicionEnemigos();
+        DetectPlayer();
+        if (isPlayerInRange)
+        {
+            ChasePlayer();
+        }
     }
 
-    public void Comportamiento_Enemigo()
+    void DetectPlayer()
     {
-        // Calcula la dirección de movimiento hacia el jugador
-        direccionMovimiento = (target.transform.position - transform.position).normalized;
-
-        if (Vector3.Distance(transform.position, target.transform.position) > 15)
+        // Calcula la distancia entre el enemigo y el jugador
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        if (distanceToPlayer <= detectionRadius)
         {
-            cronometro += Time.deltaTime;
-            if (cronometro >= 5)
-            {
-                rutina = Random.Range(0, 2);
-                cronometro = 0;
-            }
-            switch (rutina)
-            {
-                case 0:
-                    anim.SetBool("Idle", true);
-                    anim.SetBool("Attack", false);
-                    break;
-
-                case 1:
-                    rutina++;
-                    break;
-
-                case 2:
-                    transform.rotation = Quaternion.LookRotation(direccionMovimiento); // Apunta hacia la dirección de movimiento
-                    transform.Translate(Vector3.forward * 1 * Time.deltaTime);
-                    anim.SetBool("Idle", true);
-                    anim.SetBool("Attack", false);
-                    break;
-            }
+            isPlayerInRange = true;
         }
         else
         {
-            // Mantén la posición y rotación actual del enemigo, no cambies su rotación hacia el jugador
-            anim.SetBool("Idle", false);
-            anim.SetBool("Attack", true);
-            transform.Translate(direccionMovimiento * 4 * Time.deltaTime); // Mueve hacia la dirección de movimiento
+            isPlayerInRange = false;
         }
     }
 
-    void GestionarAparicionEnemigos()
+    void ChasePlayer()
     {
-        spawnTimer -= Time.deltaTime; // Reduce el temporizador en el tiempo transcurrido desde el último frame
-
-        if (spawnTimer <= 0f)
-        {
-            InstanciarEnemigo(); // Llama al método que instancia el enemigo
-            spawnTimer = spawnInterval; // Reinicia el temporizador
-        }
+        // Dirección hacia el jugador
+        Vector3 direction = (player.position - transform.position).normalized;
+        // Mueve al enemigo hacia el jugador
+        transform.position += direction * speed * Time.deltaTime;
     }
 
-    void InstanciarEnemigo()
+    void OnDrawGizmosSelected()
     {
-        Instantiate(enemyPrefab, transform.position, transform.rotation); // Instancia el enemigo en la posición y rotación del spawner
+        // Dibuja el radio de detección en la vista de escena
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
     }
 }
 
