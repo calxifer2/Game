@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
-    public void EscenaColiseo()
+    public void EscenaInicio()
     {
-        SceneManager.LoadScene("Victor");
+        SceneManager.LoadScene("Inicio");
+    }
+
+    public void Salir()
+    {
+        Application.Quit();
     }
 
     public void EscenaNiveles()
@@ -18,23 +22,20 @@ public class MainMenu : MonoBehaviour
 
     public void EscenaNvl1()
     {
-        SceneManager.LoadScene("Nvl1");
+        SceneManager.LoadScene("Kathe");
     }
     public void EscenaNvl2()
     {
-        SceneManager.LoadScene("Nvl2");
+        SceneManager.LoadScene("Santiago");
     }
     public void EscenaNvl3()
     {
-        SceneManager.LoadScene("Nvl3");
+        SceneManager.LoadScene("Victor");
     }
     public void EscenaNvl4()
     {
-        SceneManager.LoadScene("Nvl4");
+        SceneManager.LoadScene("Mateo");
     }
 
-    public void Salir()
-    {
-        Application.Quit();
-    }
+
 }
