@@ -4,52 +4,44 @@ using UnityEngine;
 
 public class CastillitoMovimientos : MonoBehaviour
 {
-    public float moveSpeed = 9.0f; // Velocidad de movimiento del enemigo
-    public float changeDirectionTime = 2.0f; // Tiempo entre cambios de dirección
-    public float playerDetectionDistance = 20f; // Distancia para detectar al jugador
-    public float velocidad = 1f; // Velocidad de movimiento hacia el jugador
-    public float detectionRange = 15f; // Rango de detección del jugador
-
-    private Vector3 movementDirection;
-    private float timer;
-    private Rigidbody rb;
+    public float velocidad = 1f;
+    public float randomMoveInterval = 9f;
+    public float detectionRange = 15f; 
     private Transform player;
+    private bool isPlayerInRange = false;
+    private Vector3 randomDirection; 
+    private float timeSinceLastMove = 2f; // Tiempo transcurrido desde el último cambio de dirección
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-
-        if (rb == null)
+        // Encuentra al jugador por su tag
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+        if (playerObject != null)
         {
-            Debug.LogError("No Rigidbody component found on " + gameObject.name);
-            return;
+            player = playerObject.transform;
         }
-
-        // Congelar rotaciones para evitar que el enemigo se caiga
-        rb.freezeRotation = true;
-
-        timer = changeDirectionTime;
-        ChangeDirection();
-
-        player = GameObject.FindGameObjectWithTag("Player")?.transform; // Buscar al jugador por la etiqueta "Player"
+        // Genera una dirección aleatoria inicial
+        GenerateRandomDirection();
     }
 
     void Update()
     {
-        if (rb == null || player == null) return; // Asegúrate de que el Rigidbody y el jugador estén asignados
-
-        timer -= Time.deltaTime;
-        if (timer <= 0)
+        if (player != null)
         {
-            ChangeDirection();
-            timer = changeDirectionTime;
+            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+
+            if (distanceToPlayer <= detectionRange)
+            {
+                isPlayerInRange = true;
+            }
+            else
+            {
+                isPlayerInRange = false;
+            }
         }
 
-        // Calcular la distancia entre el enemigo y el jugador
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-
-        // Si la distancia es menor o igual a la distancia de detección del jugador, dirigirse hacia el jugador
-        if (distanceToPlayer <= playerDetectionDistance)
+        if (isPlayerInRange)
         {
             MoveTowardsPlayer();
         }
@@ -59,39 +51,34 @@ public class CastillitoMovimientos : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
-    {
-        if (rb == null) return; // Asegúrate de que el Rigidbody está asignado
-
-        MoveEnemy();
-    }
-
-    void ChangeDirection()
-    {
-        float randomAngleY = Random.Range(0f, 360f);
-        float radiansY = randomAngleY * Mathf.Deg2Rad;
-
-        // Movimiento solo en el plano XZ
-        movementDirection = new Vector3(Mathf.Cos(radiansY), 0, Mathf.Sin(radiansY)).normalized;
-    }
-
     void MoveTowardsPlayer()
     {
-        movementDirection = (player.position - transform.position).normalized;
+        // Dirección hacia el jugador
+        Vector3 direction = (player.position - transform.position).normalized;
+        // Movimiento hacia el jugador
+        transform.position += direction * velocidad * Time.deltaTime;
     }
 
     void MoveRandomly()
     {
-        // Movimiento aleatorio en el plano XZ
-        if (timer <= 0)
+        // Incrementa el tiempo transcurrido
+        timeSinceLastMove += Time.deltaTime;
+
+        // Si ha pasado suficiente tiempo, genera una nueva dirección aleatoria
+        if (timeSinceLastMove >= randomMoveInterval)
         {
-            ChangeDirection();
-            timer = changeDirectionTime;
+            GenerateRandomDirection();
+            timeSinceLastMove = 0f;
         }
+
+        // Mueve al enemigo en la dirección aleatoria actual
+        transform.position += randomDirection * velocidad * Time.deltaTime;
     }
 
-    void MoveEnemy()
+    void GenerateRandomDirection()
     {
-        rb.velocity = movementDirection * moveSpeed;
+        // Genera una dirección aleatoria
+        float randomAngle = Random.Range(0f, 360f);
+        randomDirection = new Vector3(Mathf.Cos(randomAngle * Mathf.Deg2Rad), Mathf.Sin(randomAngle * Mathf.Deg2Rad), 0).normalized;
     }
 }
